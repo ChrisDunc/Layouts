@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.clduncan.layouts.TopFiveLeagues">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="384dp"
+        android:layout_height="511dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/LaLiga"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/LaLiga"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/LigaName"
+            android:text="La Liga Santander"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/LaLiga" />
+
+        <TextView
+            android:id="@+id/LigaDesc"
+            android:text="Top League of Spain"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/LaLiga"
+            android:layout_below="@id/LigaName"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:text="Major Clubs: Barcelona, Real Madrid, Atletico Madrid"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/LaLiga"
+            android:layout_below="@id/LigaDesc"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <ImageView
+        android:id="@+id/EPL"
+        android:layout_below="@id/LaLiga"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/EPL"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/EPLName"
+            android:text="English Premier League"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_below="@+id/LaLiga"
+            android:layout_toRightOf="@+id/EPL" />
+
+        <TextView
+            android:id="@+id/EPLDesc"
+            android:text="Top League of England"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/EPL"
+            android:layout_below="@id/EPLName"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:text="Major Clubs: Arsenal, Chelsea, Man United, Man City"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/EPL"
+            android:layout_below="@id/EPLDesc"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <ImageView
+            android:id="@+id/Bundesliga"
+            android:layout_below="@id/EPL"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bundesliga"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/BunName"
+            android:text="Bundesliga"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_below="@+id/EPL"
+            android:layout_toRightOf="@+id/Bundesliga" />
+
+        <TextView
+            android:id="@+id/BunDesc"
+            android:text="Top League of Germany"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/Bundesliga"
+            android:layout_below="@id/BunName"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:text="Major Clubs: Bayern Munich, Borussia Dortmund"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/Bundesliga"
+            android:layout_below="@id/BunDesc"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <ImageView
+            android:id="@+id/SerieA"
+            android:layout_below="@id/Bundesliga"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/SerieA"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/SerieName"
+            android:text="Serie A"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_below="@+id/Bundesliga"
+            android:layout_toRightOf="@+id/SerieA" />
+
+        <TextView
+            android:id="@+id/SerieDesc"
+            android:text="Top League of Italy"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/SerieA"
+            android:layout_below="@id/SerieName"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:text="Major Clubs: Juventus, Roma, AC Milan, Inter, Napoli"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/SerieA"
+            android:layout_below="@id/SerieDesc"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <ImageView
+            android:id="@+id/Ligue"
+            android:layout_below="@id/SerieA"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/Ligue1"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/LigueName"
+            android:text="Ligue 1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:layout_below="@+id/SerieA"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/Ligue" />
+
+        <TextView
+            android:id="@+id/LigueDesc"
+            android:text="Top League of France"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/Ligue"
+            android:layout_below="@id/LigueName"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:text="Major Clubs: PSG, Monaco, Lyon, Marseille"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/Ligue"
+            android:layout_below="@id/LigueDesc"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
